@@ -37,6 +37,8 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
@@ -135,7 +137,7 @@ public class SincronizacaoReceita {
 			csvWriter.close();
 			fileWriter.close();
 			
-			System.out.println("ARQUIVO GERADO COM SUCESSO, VÁ ATE C:/TEMP E VEJA O ARQUIVO COM RESULTADO!!!!");
+			JOptionPane.showMessageDialog(null, "ARQUIVO GERADO COM SUCESSO, VÁ ATE C:/TEMP E VEJA O ARQUIVO COM RESULTADO!!!!");
 	    }
 	    catch (Exception e) {
 	        e.printStackTrace();
